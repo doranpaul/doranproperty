@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviced Accommodation in the heart of Newcastle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- Swiper CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Home from Home</h1>
+            <p>Relax and unwind at our stunning serviced accommodation, where comfort meets elegance.</p>
+        
+            <div class="booking-container">
+                <button class="btn book-btn" onclick="toggleBookingDropdown()">Book Now</button>
+                <div id="bookingDropdown" class="dropdown-menu">
+                    <a href="https://www.airbnb.com/s/Newcastle--County-Down--United-Kingdom/homes" target="_blank">Airbnb</a>
+                    <a href="https://www.booking.com/city/gb/newcastle.html" target="_blank">Booking.com</a>
+                </div>
+            </div>
+            
+        
+    </header>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Nestled in the heart of the picturesque seaside town of Newcastle, Co. Down, our elegant 3-bedroom serviced accommodation offers the ideal retreat for families, friends, or professionals seeking a blend of comfort and convenience.
+    
+                Wake up to the fresh sea breeze and stunning views of the majestic Mourne Mountains, just a stone's throw away. Each bedroom is thoughtfully designed to provide a relaxing sanctuary, complemented by a spacious living area, a fully equipped modern kitchen, and all the amenities you need for a home-away-from-home experience.
+    
+                Whether you're here to explore the scenic walking trails, tee off at the world-renowned Royal County Down Golf Club, or simply unwind by the beach, our property promises an unforgettable stay in this charming coastal town.
+    
+                Book your stay today and immerse yourself in the beauty and tranquility of Newcastle, Co. Down.
+            </p>
+        </div>
+    </section>
+    <section class="property-gallery">
+        <!-- Swiper Carousel -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/inside.avif" alt="Property View 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/livingroom.avif" alt="Property View 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/shelf.avif" alt="Property View 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/laptop.avif" alt="Property View 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/rcd.jpg" alt="Property View 4">
+                </div>
+            </div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Location</strong> – A short walk to the beach and easy access to Mourne Mountain trails.</li>
+                <li><strong>Cosy & Modern</strong> – A cosy 3-bedroom retreat with stylish interiors.</li>
+                <li><strong>Entertainment for Everyone</strong> – Smart TV with Netflix & Disney+.</li>
+                <li><strong>Complimentary Tea & Coffee</strong> – Start your mornings right.</li>
+                <li><strong>Free Private Parking</strong> – Hassle-free parking for multiple guests.</li>
+                <li><strong>Family & Kid-Friendly</strong> – Baby cot and high chair available.</li>
+                <li><strong>Pet-Friendly</strong> – Bring your furry friends along!</li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <section id="amenities" class="amenities">
+        <h2>Our Amenities</h2>
+        <div class="amenities-grid">
+            <div class="amenity-item">
+                <i class="fas fa-wifi"></i>
+                <p>Free Wi-Fi</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-parking"></i>
+                <p>Off Street Parking</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-user"></i>
+                <p>Sleeps 6 guests</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-baby-carriage"></i>
+                <p>Child Friendly</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-tv"></i>
+                <p>Smart TV with Netflix & Disney+</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-coffee"></i>
+                <p>Complimentary Tea & Coffee</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-bed"></i>
+                <p>Luxury Bedding & Towels</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-utensils"></i>
+                <p>Fully Equipped Kitchen</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-snowflake"></i>
+                <p>Heating & Air Conditioning</p>
+            </div>
+            <div class="amenity-item">
+                <i class="fas fa-mountain"></i>
+                <p>Scenic Mountain Views</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="button" class="btn" onclick="sendMessage()">Send Message</button>
+        </form>
+        <p id="confirmationMessage" style="display: none; color: green; margin-top: 10px;">Your message has been sent! Thank you.</p>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Connect with Us Section -->
+            <div class="footer-left">
+                <h3>Connect with Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Contact Details Section -->
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:doranpropertyholdings@gmail.com">doranpropertyholdings@gmail.com</a></p>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Property Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- Swiper JS -->
+    <script src="script.js"></script> <!-- Custom JS -->
+</body>
+</html>

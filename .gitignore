@@ -1,0 +1,23 @@
+# Ignore node_modules (prevents uploading dependencies)
+node_modules/
+package-lock.json
+
+# Ignore logs
+npm-debug.log
+yarn-error.log
+*.log
+
+# Ignore environment variables (contains sensitive data)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore deployment build files (if using React, Next.js, or Vue)
+dist/
+build/
