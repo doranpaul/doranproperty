@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './backend/.env' });
+require('dotenv').config({ path: '../backend/.env' });
 
 console.log("Email User:", process.env.EMAIL_USER);
 console.log("Email Pass:", process.env.EMAIL_PASS ? "Loaded" : "Missing");
@@ -28,6 +28,7 @@ app.get('/', (req, res) => {
 app.post('/send-message', async (req, res) => {
     try {
         const { name, email, message } = req.body;
+        console.log("Message sent:", name, email, message);
 
         if (!name || !email || !message) {
             return res.status(400).json({ error: 'All fields are required.' });

@@ -34,6 +34,7 @@ function sendMessage() {
     })
         .then((response) => response.json())
         .then((data) => {
+            console.log("Message sent:", name, email, message);
             if (data.message) {
                 alert('Your message has been sent!');
                 document.getElementById('contactForm').reset();
