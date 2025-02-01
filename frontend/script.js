@@ -51,6 +51,7 @@ fetch(`${BACKEND_URL}/send-message`, {
         console.error('Error:', error);
         alert('An error occurred. Please try again.');
     });
+}
 
 
 function toggleBookingDropdown() {
@@ -60,7 +61,7 @@ function toggleBookingDropdown() {
 
 // Close dropdown if user clicks outside
 window.onclick = function(event) {
-    if (!event.target.matches('.book-btn')) {
+    if (!event.target.matches('.book-btn') && !event.target.closest('.dropdown-menu')) {
         let dropdowns = document.getElementsByClassName("dropdown-menu");
         for (let i = 0; i < dropdowns.length; i++) {
             let openDropdown = dropdowns[i];
@@ -70,4 +71,3 @@ window.onclick = function(event) {
         }
     }
 };
-}
