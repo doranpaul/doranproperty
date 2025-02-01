@@ -14,7 +14,18 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+
+const allowedOrigins = [
+    "http://localhost:3000", // Local frontend (React)
+    "http://localhost:5173", // Local frontend (Vite)
+    "https://homefromhome.onrender.com" // Production frontend
+];
+
+app.use(cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST"],
+    credentials: true
+}));
 
 // Serve the frontend files
 app.use(express.static(path.join(__dirname, '../frontend')));
