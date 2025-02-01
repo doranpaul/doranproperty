@@ -207,7 +207,7 @@ section h2 {
     }
     .swiper-slide img {
         border-radius: 5px;
-        height: 200px; /* Set a fixed height for mobile view */
+        height: 100px; /* Set a fixed height for mobile view */
         object-fit: cover; /* Ensures the image covers the container without distortion */
     }
 }
