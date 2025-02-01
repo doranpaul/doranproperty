@@ -16,6 +16,7 @@ a {
 
 /* Navbar */
 .navbar {
+    position: sticky;
     display: flex;
     justify-content: flex-end;
     padding: 20px 40px;
