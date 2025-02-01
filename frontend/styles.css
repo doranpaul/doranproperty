@@ -183,6 +183,35 @@ section h2 {
     margin-bottom: 20px;
 }
 
+.property-gallery {
+    padding: 50px 20px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .swiper-slide img {
+        border-radius: 5px;
+        height: 200px; /* Set a fixed height for mobile view */
+        object-fit: cover; /* Ensures the image covers the container without distortion */
+    }
+}
+
 /* Why Choose Us Section */
 .why-choose-us {
     background: #f8f8f8;
@@ -372,6 +401,7 @@ section h2 {
     .footer-container {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .footer-left,
