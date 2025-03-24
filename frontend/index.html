@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury 3-bedroom serviced accommodation in Newcastle, Co. Down. Perfect for families, golfers & beach lovers. Book on Airbnb or Booking.com.">
+    <meta property="og:title" content="Serviced Accommodation in Newcastle | Sleeps 6 | Pet-Friendly">
+    <meta property="og:description" content="Stay in the heart of Newcastle, Co. Down. Elegant 3-bedroom holiday let near Mourne Mountains & Royal County Down Golf Club.">
+    <meta property="og:image" content="https://www.homefromhomenewcastle.co.uk/assets/inside.avif"> <!-- replace with a real image URL -->
+    <meta property="og:url" content="https://www.homefromhomenewcastle.co.uk/">
+    <meta property="og:type" content="website">
     <title>Serviced Accommodation in the heart of Newcastle</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://www.homefromhomenewcastle.co.uk/">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- Swiper CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LodgingBusiness",
+          "name": "Home from Home Newcastle",
+          "description": "Luxury 3-bedroom serviced accommodation in Newcastle, Co. Down. Sleeps 6. Family and pet-friendly. Walking distance to Royal County Down Golf Course.",
+          "image": [
+            "https://www.homefromhomenewcastle.co.uk/assets/inside.avif",
+            "https://www.homefromhomenewcastle.co.uk/assets/livingroom.avif"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Newcastle",
+            "addressRegion": "County Down",
+            "addressCountry": "UK"
+          },
+          "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Pet-Friendly", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Child-Friendly", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Free Private Parking", "value": true}
+          ],
+          "url": "https://www.homefromhomenewcastle.co.uk",
+          "sameAs": [
+            "https://facebook.com",
+            "https://instagram.com"
+          ]
+        }
+        </script>
+        
 </head>
 <body>
     <header class="header">
@@ -17,12 +54,13 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#amenities">Amenities</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="local-guide.html">Local Guide</a></li>
             </ul>
         </nav>
         <div class="header-content">
-            <img src="assets/homefromhome.png" alt="Home from Home Logo" class="logo">
+            <h1 class="visually-hidden">Serviced Accommodation in Newcastle, Co. Down | Sleeps 6 | Pet-Friendly</h1>
+            <img src="assets/homefromhome.png" alt="Home from Home Newcastle logo for serviced accommodation" class="logo">
             <p>Relax and unwind at our stunning serviced accommodation, where comfort meets elegance.</p>
-        
             <div class="booking-container">
                 <button class="btn book-btn" onclick="toggleBookingDropdown()">Book Now</button>
                 <div id="bookingDropdown" class="dropdown-menu">
@@ -30,8 +68,7 @@
                     <a href="https://www.booking.com/city/gb/newcastle.html" target="_blank">Booking.com</a>
                 </div>
             </div>
-            
-        
+        </div>
     </header>
     
     <section id="about" class="about">
@@ -53,19 +90,19 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="assets/inside.avif" alt="Property View 1">
+                    <img src="assets/inside.avif" alt="Spacious open-plan kitchen and dining area with natural light">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/livingroom.avif" alt="Property View 2">
+                    <img src="assets/livingroom.avif" alt="Modern living room with smart TV and cozy seating">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shelf.avif" alt="Property View 3">
+                    <img src="assets/shelf.avif" alt="Stylish decorative shelf with plants and books in living area">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/laptop.avif" alt="Property View 4">
+                    <img src="assets/laptop.avif" alt="Dedicated workspace with laptop setup and ambient lighting">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/rcd.jpg" alt="Property View 4">
+                    <img src="assets/rcd.jpg" alt="View of Royal County Down Golf Course with mountain backdrop">
                 </div>
             </div>
             <!-- Add navigation buttons -->
@@ -112,11 +149,11 @@
             </div>
             <div class="amenity-item">
                 <i class="fas fa-tv"></i>
-                <p>Smart TV with Netflix & Disney+</p>
+                <p>Flat Screen Smart TV</p>
             </div>
             <div class="amenity-item">
-                <i class="fas fa-coffee"></i>
-                <p>Complimentary Tea & Coffee</p>
+                <i class="fas fa-flag"></i>
+                <p>Walking distance to RCD Golf Course</p>
             </div>
             <div class="amenity-item">
                 <i class="fas fa-bed"></i>
@@ -127,12 +164,12 @@
                 <p>Fully Equipped Kitchen</p>
             </div>
             <div class="amenity-item">
-                <i class="fas fa-snowflake"></i>
-                <p>Heating & Air Conditioning</p>
+                <i class="fas fa-fire"></i>
+                <p>Central Heating</p>
             </div>
             <div class="amenity-item">
-                <i class="fas fa-mountain"></i>
-                <p>Scenic Mountain Views</p>
+                <i class="fas fa-seedling"></i>
+                <p>Private enclosed garden</p>
             </div>
         </div>
     </section>
